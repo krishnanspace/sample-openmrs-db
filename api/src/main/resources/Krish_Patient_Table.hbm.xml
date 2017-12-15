@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.openmrs.module.basicmodule.entity.Krish_Patient_POJO" table="krish_patient_table">
+        
+        <id name="patient_id" type="int" column="patient_id" unsaved-value="0">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstname" type="java.lang.String" column="firstname" length="255"/>
+        
+        <property name="lastname" type="java.lang.String" column="lastname" length="255"/>
+
+       
+    </class>
+</hibernate-mapping>

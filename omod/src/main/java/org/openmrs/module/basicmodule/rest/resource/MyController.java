@@ -20,7 +20,7 @@ public class MyController {
 	@RequestMapping(method = RequestMethod.GET, value = "getpats")
 	@ResponseBody
 	public List<Krish_Patient_POJO> getpats() {
-		List<Krish_Patient_POJO> list = getpat.getAllPatients();
+		List<Krish_Patient_POJO> list = getpat.getpat();
 		return list;
 	}
 }
